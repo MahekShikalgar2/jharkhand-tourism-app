@@ -2,95 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Jharkhand Tourism Design System - Warm & Earthy Colors with Tribal Elements */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Warm & Earthy Palette */
+    --forest-green: 120 45% 25%;
+    --forest-light: 120 35% 35%;
+    --forest-dark: 120 50% 15%;
+    
+    --earth-brown: 25 40% 30%;
+    --earth-light: 25 35% 45%;
+    --earth-dark: 25 45% 20%;
+    
+    --tribal-orange: 20 85% 55%;
+    --tribal-light: 20 75% 65%;
+    --tribal-dark: 20 95% 45%;
+    
+    --warm-beige: 40 25% 85%;
+    --warm-cream: 40 20% 95%;
+    --warm-sand: 40 30% 75%;
 
+    /* System Colors */
+    --background: var(--warm-cream);
+    --foreground: var(--earth-dark);
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: var(--earth-brown);
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: var(--earth-brown);
+    
+    --primary: var(--forest-green);
+    --primary-foreground: var(--warm-cream);
+    
+    --secondary: var(--warm-beige);
+    --secondary-foreground: var(--earth-brown);
+    
+    --muted: var(--warm-sand);
+    --muted-foreground: var(--earth-brown);
+    
+    --accent: var(--tribal-orange);
+    --accent-foreground: var(--warm-cream);
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--warm-cream);
+    
+    --border: var(--warm-sand);
+    --input: var(--warm-beige);
+    --ring: var(--forest-green);
+    
+    --radius: 1rem;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--forest-green)), hsl(var(--forest-light)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--tribal-orange)), hsl(var(--tribal-light)));
+    --gradient-earth: linear-gradient(135deg, hsl(var(--earth-brown)), hsl(var(--earth-light)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--forest-green) / 0.9), hsl(var(--earth-brown) / 0.8));
+    --gradient-card: linear-gradient(145deg, hsl(var(--warm-cream)), hsl(var(--warm-beige)));
+    
+    /* Shadows & Effects */
+    --shadow-soft: 0 4px 20px hsl(var(--earth-brown) / 0.1);
+    --shadow-glow: 0 8px 32px hsl(var(--tribal-orange) / 0.15);
+    --shadow-card: 0 2px 16px hsl(var(--forest-green) / 0.08);
+    --shadow-tribal: 0 6px 24px hsl(var(--earth-brown) / 0.12);
+    
+    /* Animation Properties */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-fast: all 0.2s ease-out;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: var(--earth-dark);
+    --foreground: var(--warm-cream);
+    --card: var(--earth-brown);
+    --card-foreground: var(--warm-beige);
+    --popover: var(--earth-brown);
+    --popover-foreground: var(--warm-beige);
+    --primary: var(--forest-light);
+    --primary-foreground: var(--warm-cream);
+    --secondary: var(--earth-brown);
+    --secondary-foreground: var(--warm-beige);
+    --muted: var(--earth-brown);
+    --muted-foreground: var(--warm-sand);
+    --accent: var(--tribal-light);
+    --accent-foreground: var(--earth-dark);
+    --border: var(--earth-brown);
+    --input: var(--earth-brown);
+    --ring: var(--forest-light);
   }
 }
 
@@ -100,6 +100,78 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  /* Card Components with 3D Effects */
+  .card-3d {
+    @apply bg-gradient-card shadow-card rounded-2xl p-6 
+           transition-all duration-smooth hover:shadow-tribal 
+           hover:scale-105 hover:-translate-y-1;
+  }
+  
+  /* Glowing Buttons */
+  .btn-glow {
+    @apply bg-gradient-warm shadow-glow rounded-xl px-6 py-3 
+           text-accent-foreground font-medium transition-all duration-smooth
+           hover:shadow-tribal hover:scale-105;
+  }
+  
+  /* Tribal Motif Borders */
+  .border-tribal {
+    @apply border-2 border-dashed border-tribal/30 
+           hover:border-tribal/60 transition-colors duration-smooth;
+  }
+  
+  /* Hero Sections */
+  .hero-section {
+    @apply bg-gradient-hero min-h-screen flex items-center justify-center
+           relative overflow-hidden;
+  }
+  
+  /* Navigation Cards */
+  .nav-card {
+    @apply bg-card/80 backdrop-blur-sm rounded-2xl p-4 
+           shadow-soft hover:shadow-card transition-all duration-smooth
+           hover:scale-105;
+  }
+  
+  /* Parallax Effects */
+  .parallax {
+    @apply transition-transform duration-smooth;
+  }
+  
+  /* Typography */
+  .heading-primary {
+    @apply font-playfair text-4xl md:text-5xl lg:text-6xl font-bold 
+           bg-gradient-to-r from-forest-dark to-earth-dark bg-clip-text text-transparent;
+  }
+  
+  .heading-secondary {
+    @apply font-playfair text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground;
+  }
+  
+  /* Interactive Elements */
+  .interactive {
+    @apply transition-all duration-smooth hover:scale-105 active:scale-95;
+  }
+  
+  /* Floating Animation */
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Tribal Pattern Overlay */
+  .tribal-pattern {
+    background-image: radial-gradient(circle at 20% 80%, hsl(var(--tribal-orange) / 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, hsl(var(--forest-green) / 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 40% 40%, hsl(var(--earth-brown) / 0.1) 0%, transparent 50%);
   }
 }
