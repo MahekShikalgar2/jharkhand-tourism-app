@@ -30,9 +30,9 @@
 
 ## 📱 App Screenshots  
 
-| Login Screen | Home Screen | Map Screen | Explore Screen |  
-|--------------|-------------|------------|----------------|  
-| ![Login](./Login.png) | ![Home](./Home.png) | ![Map](./Map.png) | ![Explore](./Explore.png) |  
+| Login Screen | Home Screen | Explore Screen |  
+|--------------|-------------|------------| 
+| ![Login](./Login.png) | ![Home](./Home.png) | ![Explore](./Explore.png) |  
 
 | Culture Screen | Food Screen | Planner Screen | AI Suggestions |  
 |----------------|-------------|----------------|----------------|  
