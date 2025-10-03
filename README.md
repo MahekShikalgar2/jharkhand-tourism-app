@@ -25,7 +25,7 @@
 
 ## 📑 Project Presentation  
 
-📂 [Download PPT]([./DurgamPath.pptx))  
+📂 [Download PPT](./DurgamPath.pptx ) 
 
 ---
 
