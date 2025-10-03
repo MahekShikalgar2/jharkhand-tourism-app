@@ -21,14 +21,14 @@
 
 ## 📑 Project Presentation  
 
-📂 [Download PPT](https://github.com/username/jharkhand-tourism-app/raw/main/TourismApp_Presentation.pptx)  
+📂 [Download PPT](https://github.com/username/jharkhand-tourism-app/raw/main/DurgamPath.pptx)  
 
 
 ## 📱 App Screenshots  
 
-| Login Screen | Home Screen | Map Screen | Culture & Festivals |  
+| Login Screen | Home Screen | Map Screen | Explore | Culture | Food | Planner | AI - Suggestions |
 |--------------|-------------|------------|---------------------|  
-| ![Login](./assets/login.png) | ![Home](./assets/home.png) | ![Map](./assets/map.png) | ![Culture](./assets/culture.png) |  
+| ![Login](Login.png) | ![Home](Home.png) |![Explore](Explore.png)| ![Culture](Culture.png) | ![Food](Food.png) | ![Planner](Planner.png) | ![AI-Suggestions](AI-Suggestions.png) |
 
 ---
 
