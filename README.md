@@ -21,7 +21,7 @@
 
 ## 📑 Project Presentation  
 
-📂 [Download PPT](https://github.com/username/jharkhand-tourism-app/raw/main/DurgamPath.pptx)  
+📂 [Download PPT](DurgamPath.pptx)  
 
 
 ## 📱 App Screenshots  
